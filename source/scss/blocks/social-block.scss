@@ -5,6 +5,23 @@
     .social-block__list {
       opacity: 1;
       pointer-events: auto;
+
+      li {
+        opacity: 1;
+        transform: translateY(0);
+
+        &:nth-child(1) {
+          transition: all .3s linear;
+        }
+
+        &:nth-child(2) {
+          transition: all .3s linear .3s;
+        }
+
+        &:nth-child(3) {
+          transition: all .3s linear .6s;
+        }
+      }
     }
   }
 }
@@ -35,6 +52,7 @@
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
+    transition: all .5s;
   }
 
   svg {
@@ -145,6 +163,9 @@
   li {
     flex: none;
     margin-bottom: 0.5rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .5s, transform 0s linear .5s;
 
     @media (min-width: $stop-scaling) {
       margin-bottom: 5px;
@@ -168,6 +189,7 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
+  transition: color .3s;
 
   @media (min-width: $stop-scaling) {
     width: 40px;
