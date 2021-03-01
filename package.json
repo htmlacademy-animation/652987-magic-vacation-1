@@ -55,7 +55,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.15"
+    "node": "^8.15"
   },
   "dependencies": {
     "node-sass": "4.14.1",
