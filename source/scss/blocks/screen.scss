@@ -28,7 +28,25 @@
       width: 100%;
       padding: 0 5.6rem;
     }
+
+    .screen__overlay {
+      transform: translateY(0);
+      transition-property: transform;
+      transition-duration: 0.7s;
+      transition-timing-function: ease-in-out, cubic-bezier(0, 0, 1, 0.8);
+    }
   }
+}
+
+.screen__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $c-dark;
+  transform: translateY(100%);
 }
 
 .screen__wrapper {
