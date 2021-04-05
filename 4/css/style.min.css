@@ -2626,10 +2626,9 @@ img {
     left: auto;
     right: 0;
     transform: translate(0%, -50%);
-    animation: rules__link-before-move 0.25s ease-in backwards 1.8s; }
-  .rules__link.rules__link-text {
-    opacity: 0;
-    animation: rules__link-text-move 0.3s ease-in backwards 2s; }
+    animation: rules__link-before-move 0.25s ease-in backwards 1.1s; }
+  .rules__link span {
+    animation: rules__link-text-move 0.3s ease-in backwards 1.2s; }
   @media (min-width: 2000px) {
     .rules__link {
       bottom: 60px;
